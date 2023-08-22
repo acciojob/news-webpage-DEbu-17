@@ -1,58 +1,82 @@
 /*  your css code here. If applicable */
-*{
-	margin:0;
-	padding:0;
-}
-body{
-	background-color : #f5f5f5
-}
-section{
-	display:flex;
-	justify-content:space-evenly;
-	background-color:#f5f5f5;
-}
-header{
-	background-color:#011e29;
-	color:white;
-	padding:10px;
+body, h1, h2, h3, p, ul, li, img {
+    margin: 0;
+    padding: 0;
 }
 
+/* Apply colors to header and body */
+header {
+    background-color: #011e29;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
 
+body {
+    background-color: #f5f5f5;
+}
 
-P{
-	margin-top:15px;
+/* Style for Latest News section */
+.latest-news {
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-img{
-	height:100px;
-	width:120px;
+
+.latest-news h2 {
+    text-align: center;
+    margin-bottom: 10px;
 }
-#div-1{
-	margin-top:5px;
-	padding:10px;
-	height:50%;
-	text-align:center;
+
+.latest-news ul {
+    list-style: none;
 }
-#div-2{
-	margin-top:5px;
-	height:200px;
-	width:300px;
-	text-align:center;
-	padding-top:15px;
+
+.latest-news li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
-#div-3{
-	margin-top:5px;
-	height:350px;
-	width:200px;
-	text-align:center;
+
+.latest-news li img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
 }
-h1{
-	margin-bottom:5px;
+
+.latest-news li h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
-.first{
-	border-radius:15px;
-	background-color:white;
-	border:1px solid black
-	box-shadow:10px 5px 5px black;
-	overflow:hidden;
-	box-sizing:border-box;
+
+.latest-news li p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Style for Pictorial News section */
+.pictorial-news {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.pictorial-news h2 {
+    margin-bottom: 10px;
+}
+
+.pictorial-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pictorial-images img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
